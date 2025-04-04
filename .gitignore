@@ -1,0 +1,6 @@
+collaborating_using_renv.Rproj
+.Rproj.user/
+output/*.rds
+output/*.png
+report.html
+.DS_Store
