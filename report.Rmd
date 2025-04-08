@@ -54,3 +54,29 @@ plot(
   bty = "n", pch = 19
 )
 ```
+
+# Random numbers 4
+```{r, random-numbers4-histogram}
+#| fig.cap = "Scatter plot of random numbers",
+#| echo = FALSE
+random_numbers4_quantiles <- quantile(
+  random_numbers4, 
+  seq(0, 1, length = 5)
+)
+random_numbers4_breaks <- as.numeric(
+  cut(
+    random_numbers4, 
+    breaks = random_numbers4_quantiles,
+    include.lowest = TRUE
+  )
+)
+
+colors <- 1:4
+
+point_color <- colors[random_numbers4_breaks]
+plot(
+  x = random_numbers1, y = random_numbers2,
+  col = point_color,
+  bty = "n", pch = 19
+)
+```
