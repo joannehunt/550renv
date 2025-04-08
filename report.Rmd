@@ -26,6 +26,7 @@ random_numbers2 <- readRDS(
 random_numbers3 <- readRDS(
   here::here("output/random_numbers3.rds")
 )
+
 ```
 
 # A scatter plot
@@ -80,3 +81,49 @@ plot(
   bty = "n", pch = 19
 )
 ```
+=======
+
+random_numbers4 <- readRDS(
+  here::here("output/random_numbers4.rds")
+)
+
+random_numbers5 <- readRDS(
+  here::here("output/random_numbers5.rds")
+)
+```
+
+# Random numbers 1
+
+```{r, random-numbers1-histogram}
+#| fig.cap = "First set of random numbers"
+hist(random_numbers1)
+```
+
+# Random numbers 2
+
+```{r, random-numbers2-histogram}
+#| fig.cap = "Second set of random numbers"
+hist(random_numbers2)
+```
+
+# Random numbers 3
+
+```{r, random-numbers3-histogram}
+#| fig.cap = "Third set of random numbers"
+hist(random_numbers3)
+```
+
+# Random numbers 4
+
+```{r, random-numbers4-histogram}
+#| fig.cap = "Fourth set of random numbers"
+hist(random_numbers4)
+```
+
+# Random numbers 5
+
+```{r, random-numbers5-histogram}
+#| fig.cap = "Fifth set of random numbers"
+hist(random_numbers5)
+```
+

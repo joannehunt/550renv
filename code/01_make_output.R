@@ -5,6 +5,9 @@ here::i_am(
 set.seed(1)
 random_numbers1 <- rnorm(100)
 
+
+
+
 saveRDS(
   random_numbers1,
   file = here::here("output", "random_numbers1.rds")
@@ -33,3 +36,13 @@ saveRDS(
   random_numbers4,
   file = here::here("output", "random_numbers4.rds")
 )
+
+
+set.seed(5)
+random_numbers5 <- rgeom(100, 0.25)
+
+saveRDS(
+  random_numbers5,
+  file = here::here("output", "random_numbers5.rds")
+)
+
